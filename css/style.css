@@ -22,7 +22,7 @@ a {
   text-decoration: none;
   color: #000;
 }
-.logo-nav ul, .main-nav .slide-menu {
+.logo-nav ul, .main-nav {
   display: flex;
   align-items: center;
 
@@ -48,4 +48,13 @@ ul li {
 }
 .main-menu li {
   margin: 0 20px;
+  position: relative;
+}
+
+.slide-menu {
+  display: none;
+  position:absolute;
+  top: 0;
+  margin-top: 30px;
+  background-color: grey;
 }
