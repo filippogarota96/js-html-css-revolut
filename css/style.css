@@ -3,9 +3,10 @@
   margin: 0;
   box-sizing: border-box;
 }
-
+/* general */
 body {
   background-color: #F3F4F5;
+  font-family: 'Roboto', sans-serif;
 }
 header {
   display: flex;
@@ -23,18 +24,28 @@ a {
   text-decoration: none;
   color: #000;
 }
-.logo-nav ul, .main-nav {
-  display: flex;
-  align-items: center;
-
-}
-
 ul li {
   list-style: none;
 }
+.logo-nav ul, .main-nav {
+  display: flex;
+  align-items: center;
+}
 
+
+/* logo nav */
 .logo-nav li {
   padding: 0 6%;
+}
+
+.logo-nav ul li:last-child a {
+  color: lightgrey;
+  transition: color 0.3s;
+}
+
+.logo-nav ul li:last-child a:hover {
+  color: #000;
+  transition: color 0.8s ease;
 }
 
 .btn {
@@ -52,15 +63,58 @@ ul li {
   position: relative;
   padding: 20px 0;
 }
-
+.main-menu > li a {
+  color: #A4A4A4;
+  transition: color 0.5s ease;
+}
+.main-menu > li a:hover {
+  color: #000;
+}
 .slide-menu {
   display: none;
   position:absolute;
   top: 10px;
   margin-top: 30px;
-  background-color: grey;
+  background-color: #fff;
+  box-shadow: 1px 1px rgba(0, 0, 0, 0.2);
+  padding: 10px 10px;
+  width: 150px;
+  border-radius: 10px;
 }
 
+.slide-menu li {
+  padding: 10px 0;
+}
+
+.slide-menu li a {
+  color: #A4A4A4;
+  transition: color 0.5s ease;
+}
+.slide-menu li a:hover {
+  color: #000;
+}
+
+#sign-in {
+  background-color: #EBEBEB;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+#get {
+  background-color: black;
+  color: #fff;
+  border: none;
+  padding: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+#get:focus {
+  outline: none;
+}
+#get:hover {
+  background-color: #3E4043; 
+}
 /* .active {
   display: block;
 } */
