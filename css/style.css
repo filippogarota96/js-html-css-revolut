@@ -12,6 +12,7 @@ header {
   justify-content: space-between;
   background-color: #fff;
   height: 80px;
+  padding: 0 30px;
 }
 nav {
   display: flex;
@@ -32,8 +33,8 @@ ul li {
   list-style: none;
 }
 
-.logo-nav li, .first-nav li {
-  padding: 0 5%;
+.logo-nav li {
+  padding: 0 6%;
 }
 
 .btn {
@@ -46,15 +47,20 @@ ul li {
 .main-menu  {
   display: flex;
 }
-.main-menu li {
+.main-menu > li {
   margin: 0 20px;
   position: relative;
+  padding: 20px 0;
 }
 
 .slide-menu {
   display: none;
   position:absolute;
-  top: 0;
+  top: 10px;
   margin-top: 30px;
   background-color: grey;
 }
+
+/* .active {
+  display: block;
+} */
